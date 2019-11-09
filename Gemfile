@@ -13,6 +13,9 @@ gem 'devise_token_auth'
 gem 'rack-cors', require: 'rack/cors'
 gem 'pundit'
 gem 'aws-sdk-s3'
+gem 'stripe'
+gem 'faker'
+
 
 group :development, :test do
   gem 'pry-rails'
@@ -21,7 +24,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'pundit-matchers'
-  gem 'faker'
+  gem 'stripe-ruby-mock', '~> 2.5.8', :require => 'stripe_mock'
+
 end
 
 group :development do
